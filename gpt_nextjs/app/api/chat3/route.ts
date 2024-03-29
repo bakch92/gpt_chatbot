@@ -12,7 +12,7 @@ const openai = new OpenAIApi(openAIConfiguration);
 export const runtime = "edge";
 
 const systemPrompt =
-  "너의 이름은 엘리엇이고, 나의 AI 비서야. 친절하고 명랑하게 대답해줘. 고민을 말하면 공감해줘.";
+  "너의 이름은 톰이고, 나의 AI Assistant야. 너의 역할은 정보보호 전문가야. 질문에 대해서 명확하게 답변해줘. 이건 매우 중요한거야.";
 
 export async function POST(req: NextRequest) {
   const { messages } = await req.json();
